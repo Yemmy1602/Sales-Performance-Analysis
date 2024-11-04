@@ -46,8 +46,8 @@ The dataset used for this analysis includes information on:
 ![Pivot tables and Formulas for Sales Data](https://github.com/user-attachments/assets/883e6012-89f4-40c4-891c-2000ce53321a)
 ![Sales Performance Analysis View](https://github.com/user-attachments/assets/1fef5f3d-7da2-47a2-a7fc-4a6ae150fb98)
 
-
-
+## PowerBI - Sales Performance Dashboard
+![PowerBI - Sales Performance Visualization](https://github.com/user-attachments/assets/0d630d22-65d3-49f5-a7f2-fe6df34b84d4)
 
 
 ## Visual Analysis and Overall Insights
