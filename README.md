@@ -45,10 +45,9 @@ The dataset used for this analysis includes information on:
 The following are the Excel formulas, SQL codes, DAX Expressions used during my Analysis
 
 ```=AVERAGEIF(SalesData!C:C,SalesData!C2,SalesData!H:H)
-   =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
+=SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
 
-
-```Average Sales = [Total Sales] / [Total Transactions]
+Average Sales = [Total Sales] / [Total Transactions]
 Total Customers = DISTINCTCOUNT(SalesData[Customer Id])
 Total Sales = SUM(SalesData[Total Sales ])
 Total Transactions = COUNT(SalesData[OrderID])
