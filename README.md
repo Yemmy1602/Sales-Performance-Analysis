@@ -38,7 +38,6 @@ The dataset used for this analysis includes information on:
 ## Data Cleaning and Preparation
 - Data Loading and Inspection (Duplicates information were removed)
 - No Missing Variables
-- Data Cleaning and Formatting
 - Creation of Calculated columns and measures
 
 ## Data Analysis
