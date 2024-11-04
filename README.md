@@ -45,11 +45,11 @@ The dataset used for this analysis includes information on:
 The following are the Excel formulas, SQL codes, DAX Expressions used during my Analysis
 
 ```
-EXCEL
+EXCEL FORMULAS
 =AVERAGEIF(SalesData!C:C,SalesData!C2,SalesData!H:H)
 =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
 
-
+SQL CODES
 SELECT Product, SUM(totalsales) AS TotalSales
 FROM SalesData
 GROUP BY Product
