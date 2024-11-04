@@ -31,7 +31,7 @@ The dataset used for this analysis includes information on:
 - Total Transactions: The count of individual sales transactions
 
 ## Tools Used
-- Excel: For data cleaning, exploration, and initial calculations using pivot tables.
+- Excel: For data cleaning, exploration, and initial calculations using pivot tables. 
 - SQL: For advanced data queries on sales by product, region, and time period.
 - Power BI: To build an interactive dashboard with slicers and visuals for revenue, top products, and regional sales insights.
 
@@ -40,6 +40,14 @@ The dataset used for this analysis includes information on:
 - No Missing Variables
 - Data Cleaning and Formatting
 - Creation of Calculated columns and measures
+
+
+## Data Analysis and Method Used in Microsoft Excel
+![Pivot tables and Formulas for Sales Data](https://github.com/user-attachments/assets/883e6012-89f4-40c4-891c-2000ce53321a)
+![Sales Performance Analysis View](https://github.com/user-attachments/assets/1fef5f3d-7da2-47a2-a7fc-4a6ae150fb98)
+
+
+
 
 
 ## Visual Analysis and Overall Insights
