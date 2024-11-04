@@ -35,6 +35,12 @@ The dataset used for this analysis includes information on:
 - SQL: For advanced data queries on sales by product, region, and time period.
 - Power BI: To build an interactive dashboard with slicers and visuals for revenue, top products, and regional sales insights.
 
+## Data Cleaning and Preparation
+- Data Loading and Inspection (Duplicates information were removed)
+- No Missing Variables
+- Data Cleaning and Formatting
+- Creation of Calculated columns and measures
+
 
 ## Visual Analysis and Overall Insights
 
