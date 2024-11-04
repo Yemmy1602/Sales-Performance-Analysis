@@ -56,21 +56,31 @@ GROUP BY Product
 
 SELECT Region, COUNT(*) AS SalesTransactionsNumber
 FROM SalesData
-GROUP BY Region;
+GROUP BY Region
 
 SELECT TOP 1 Product, SUM(totalsales) AS TotalSales
 FROM SalesData 
 GROUP BY Product
-ORDER BY TotalSales DESC;
+ORDER BY TotalSales DESC
 
 SELECT  Product,  SUM(totalsales) AS TotalRevenue   
 FROM SalesData
-GROUP BY Product
+GROUP BY ProductSELECT Month(OrderDate) AS Month,
+    SUM(totalsales) AS MonthlySalesTotal
+FROM SalesData WHERE YEAR(OrderDate) = '2024'
+GROUP BY Month(OrderDate) 
+ORDER BY Month
+
+SELECT Month(OrderDate) AS Month,
+    SUM(totalsales) AS MonthlySalesTotal
+FROM SalesData WHERE YEAR(OrderDate) = '2024'
+GROUP BY Month(OrderDate) 
+ORDER BY Month
 
 SELECT TOP 5 CustomerID, SUM(totalsales) AS TotalPurchaseAmount
 FROM SalesData
 GROUP BY CustomerID
-ORDER BY TotalPurchaseAmount DESC;
+ORDER BY TotalPurchaseAmount DESC
 
 WITH TotalSales AS (
     SELECT SUM(totalsales) AS OverallTotal
@@ -78,8 +88,8 @@ WITH TotalSales AS (
 )
 SELECT 
     Region, 
-    SUM(SalesAmount) AS RegionSales,
-    (SUM(SalesAmount) * 100.0 / (SELECT OverallTotal FROM TotalSales)) AS PercentageOfTotalSales
+    SUM(totalsales) AS RegionSales,
+    (SUM(totalsales) * 100.0 / (SELECT OverallTotal FROM TotalSales)) AS PercentageOfTotalSales
 FROM SalesData
 GROUP BY Region
 
@@ -87,7 +97,7 @@ SELECT Product FROM salesdata
 GROUP BY Product
 HAVING SUM(CASE 
 WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
-THEN 1 ELSE 0 END) = 0
+THEN 1 ELSE 0 END) = 0
 
 DAX MEASURES
 Average Sales = [Total Sales] / [Total Transactions]
@@ -101,6 +111,11 @@ Total Units Sold = SUM(SalesData[Quantity])
 ## Method Used in Microsoft Excel
 ![Pivot tables and Formulas for Sales Data](https://github.com/user-attachments/assets/883e6012-89f4-40c4-891c-2000ce53321a)
 ![Sales Performance Analysis View](https://github.com/user-attachments/assets/1fef5f3d-7da2-47a2-a7fc-4a6ae150fb98)
+
+## SQL ONLINE - SQL Codes View
+![SQL Queries view](https://github.com/user-attachments/assets/02c37f7a-91ca-47a8-ab93-e185776b9487)
+![SQL Queries view 2 ](https://github.com/user-attachments/assets/60ed0435-6cca-4ff6-99d0-186aead97d15)
+
 
 ## PowerBI - Sales Performance Dashboard
 ![PowerBI - Sales Performance Visualization](https://github.com/user-attachments/assets/0d630d22-65d3-49f5-a7f2-fe6df34b84d4)
