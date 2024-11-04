@@ -29,3 +29,8 @@ The dataset used for this analysis includes information on:
 - Average Sales: The average transaction value across all sales.
 - Total Units Sold: The aggregate number of items sold.
 - Total Transactions: The count of individual sales transactions
+
+## Tools Used
+- Excel: For data cleaning, exploration, and initial calculations using pivot tables.
+- SQL: For advanced data queries on sales by product, region, and time period.
+- Power BI: To build an interactive dashboard with slicers and visuals for revenue, top products, and regional sales insights.
