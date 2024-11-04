@@ -17,6 +17,9 @@ This dashboard helps stakeholders pinpoint high-revenue products and regions, tr
 - Regional Information (e.g., sales by region: North, South, East, West)
 - Sales Metrics (e.g., monthly sales figures, quarterly performance)
 
+## Data Sources
+The data used for this work is gotten from my project work.
+
 
 ## Data Collected
 
