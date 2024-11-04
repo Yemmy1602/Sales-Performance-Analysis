@@ -48,14 +48,12 @@ The following are the Excel formulas, SQL codes, DAX Expressions used during my 
    =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
 
 
-
-
 ```Average Sales = [Total Sales] / [Total Transactions]
 Total Customers = DISTINCTCOUNT(SalesData[Customer Id])
 Total Sales = SUM(SalesData[Total Sales ])
 Total Transactions = COUNT(SalesData[OrderID])
 Total Units Sold = SUM(SalesData[Quantity])
-
+```
 
 
 ## Method Used in Microsoft Excel
