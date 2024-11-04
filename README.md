@@ -45,9 +45,51 @@ The dataset used for this analysis includes information on:
 The following are the Excel formulas, SQL codes, DAX Expressions used during my Analysis
 
 ```
+EXCEL
 =AVERAGEIF(SalesData!C:C,SalesData!C2,SalesData!H:H)
 =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
 
+
+SELECT Product, SUM(totalsales) AS TotalSales
+FROM SalesData
+GROUP BY Product
+
+SELECT Region, COUNT(*) AS SalesTransactionsNumber
+FROM SalesData
+GROUP BY Region;
+
+SELECT TOP 1 Product, SUM(totalsales) AS TotalSales
+FROM SalesData 
+GROUP BY Product
+ORDER BY TotalSales DESC;
+
+SELECT  Product,  SUM(totalsales) AS TotalRevenue   
+FROM SalesData
+GROUP BY Product
+
+SELECT TOP 5 CustomerID, SUM(totalsales) AS TotalPurchaseAmount
+FROM SalesData
+GROUP BY CustomerID
+ORDER BY TotalPurchaseAmount DESC;
+
+WITH TotalSales AS (
+    SELECT SUM(totalsales) AS OverallTotal
+    FROM SalesData
+)
+SELECT 
+    Region, 
+    SUM(SalesAmount) AS RegionSales,
+    (SUM(SalesAmount) * 100.0 / (SELECT OverallTotal FROM TotalSales)) AS PercentageOfTotalSales
+FROM SalesData
+GROUP BY Region
+
+SELECT Product FROM salesdata
+GROUP BY Product
+HAVING SUM(CASE 
+WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
+THEN 1 ELSE 0 END) = 0
+
+DAX MEASURES
 Average Sales = [Total Sales] / [Total Transactions]
 Total Customers = DISTINCTCOUNT(SalesData[Customer Id])
 Total Sales = SUM(SalesData[Total Sales ])
