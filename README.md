@@ -41,8 +41,24 @@ The dataset used for this analysis includes information on:
 - Data Cleaning and Formatting
 - Creation of Calculated columns and measures
 
+## Data Analysis
+The following are the Excel formulas, SQL codes, DAX Expressions used during my Analysis
 
-## Data Analysis and Method Used in Microsoft Excel
+```=AVERAGEIF(SalesData!C:C,SalesData!C2,SalesData!H:H)
+   =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
+
+
+
+
+```Average Sales = [Total Sales] / [Total Transactions]
+Total Customers = DISTINCTCOUNT(SalesData[Customer Id])
+Total Sales = SUM(SalesData[Total Sales ])
+Total Transactions = COUNT(SalesData[OrderID])
+Total Units Sold = SUM(SalesData[Quantity])
+
+
+
+## Method Used in Microsoft Excel
 ![Pivot tables and Formulas for Sales Data](https://github.com/user-attachments/assets/883e6012-89f4-40c4-891c-2000ce53321a)
 ![Sales Performance Analysis View](https://github.com/user-attachments/assets/1fef5f3d-7da2-47a2-a7fc-4a6ae150fb98)
 
