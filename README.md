@@ -50,20 +50,20 @@ EXCEL FORMULAS
 =SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
 
 SQL CODES
-SELECT Product, SUM(totalsales) AS TotalSales
+1. SELECT Product, SUM(totalsales) AS TotalSales
 FROM SalesData
 GROUP BY Product
 
-SELECT Region, COUNT(*) AS SalesTransactionsNumber
+2. SELECT Region, COUNT(*) AS SalesTransactionsNumber
 FROM SalesData
 GROUP BY Region
 
-SELECT TOP 1 Product, SUM(totalsales) AS TotalSales
+3. SELECT TOP 1 Product, SUM(totalsales) AS TotalSales
 FROM SalesData 
 GROUP BY Product
 ORDER BY TotalSales DESC
 
-SELECT  Product,  SUM(totalsales) AS TotalRevenue   
+4. SELECT  Product,  SUM(totalsales) AS TotalRevenue   
 FROM SalesData
 GROUP BY ProductSELECT Month(OrderDate) AS Month,
     SUM(totalsales) AS MonthlySalesTotal
@@ -71,18 +71,18 @@ FROM SalesData WHERE YEAR(OrderDate) = '2024'
 GROUP BY Month(OrderDate) 
 ORDER BY Month
 
-SELECT Month(OrderDate) AS Month,
+5. SELECT Month(OrderDate) AS Month,
     SUM(totalsales) AS MonthlySalesTotal
 FROM SalesData WHERE YEAR(OrderDate) = '2024'
 GROUP BY Month(OrderDate) 
 ORDER BY Month
 
-SELECT TOP 5 CustomerID, SUM(totalsales) AS TotalPurchaseAmount
+6. SELECT TOP 5 CustomerID, SUM(totalsales) AS TotalPurchaseAmount
 FROM SalesData
 GROUP BY CustomerID
 ORDER BY TotalPurchaseAmount DESC
 
-WITH TotalSales AS (
+7. WITH TotalSales AS (
     SELECT SUM(totalsales) AS OverallTotal
     FROM SalesData
 )
@@ -93,7 +93,7 @@ SELECT
 FROM SalesData
 GROUP BY Region
 
-SELECT Product FROM salesdata
+8. SELECT Product FROM salesdata
 GROUP BY Product
 HAVING SUM(CASE 
 WHEN OrderDate BETWEEN '2024-06-01' AND '2024-08-31' 
