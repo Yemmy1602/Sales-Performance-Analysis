@@ -7,28 +7,28 @@
 - [Project Objectives](#project-objectives)
 
 
-- [Key Metrics](#key.metrics)
+- [Key Metrics](#key-metrics)
 
 
-- [Data Sources](#data.sources)
+- [Data Sources](#data-sources)
 
 
-- [Data Collected](#data.collected)
+- [Data Collected](#data-collected)
 
 
-- [Tools Used](#tools.used)
+- [Tools Used](#tools-used)
 
 
-- [Data Cleaning and Preparation](#data.cleaning.and.preparation)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 
 
-- [Data Analysis](#data.analysis)
+- [Data Analysis](#data-analysis)
 
 
-- [Data Visualization](#data.visualization)
+- [Data Visualization](#data-visualization)
 
 
-- [Visual Analysis](#visual.analysis)
+- [Visual Analysis](#visual-analysis)
 
 
 - [Recommendations](#recommendations)
