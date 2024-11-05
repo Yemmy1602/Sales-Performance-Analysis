@@ -1,5 +1,40 @@
 # Sales Performance Analysis 
 
+## Table of Contents
+- [Project Overview](#project.overview)
+
+
+- [Project Objectives](#project.objectives)
+
+
+- [Key Metrics](#key.metrics)
+
+
+- [Data Sources](#data.sources)
+
+
+- [Data Collected](#data.collected)
+
+
+- [Tools Used](#tools.used)
+
+
+- [Data Cleaning and Preparation](#data.cleaning.and.preparation)
+
+
+- [Data Analysis](#data.analysis)
+
+
+- [Data Visualization](#data.visualization)
+
+
+- [Visual Analysis](#visual.analysis)
+
+
+- [Recommendations](#recommendations)
+
+
+
 ## Project Overview
 
 This Sales Performance Dashboard offers a clear view of a retail store's sales metrics, highlighting revenue, total transactions, top-selling products, and
@@ -106,17 +141,18 @@ Total Transactions = COUNT(SalesData[OrderID])
 Total Units Sold = SUM(SalesData[Quantity])
 ```
 
+## Data Visualizations
 
-## Method Used in Microsoft Excel
+### Microsoft Excel
 ![Pivot tables and Formulas for Sales Data](https://github.com/user-attachments/assets/883e6012-89f4-40c4-891c-2000ce53321a)
 ![Sales Performance Analysis View](https://github.com/user-attachments/assets/1fef5f3d-7da2-47a2-a7fc-4a6ae150fb98)
 
-## SQL ONLINE - SQL Codes View
+### SQL ONLINE - SQL Codes View
 ![SQL Queries view](https://github.com/user-attachments/assets/02c37f7a-91ca-47a8-ab93-e185776b9487)
 ![SQL Queries view 2 ](https://github.com/user-attachments/assets/60ed0435-6cca-4ff6-99d0-186aead97d15)
 
 
-## PowerBI - Sales Performance Dashboard
+### PowerBI - Sales Performance Dashboard
 ![PowerBI - Sales Performance Visualization](https://github.com/user-attachments/assets/0d630d22-65d3-49f5-a7f2-fe6df34b84d4)
 
 
