@@ -1,10 +1,10 @@
 # Sales Performance Analysis 
 
 ## Table of Contents
-- [Project Overview](#projectoverview)
+- [Project Overview](#project.overview)
 
 
-- [Project Objectives](#projectobjectives)
+- [Project Objectives](#project.objectives)
 
 
 - [Key Metrics](#key.metrics)
