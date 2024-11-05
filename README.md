@@ -25,10 +25,10 @@
 - [Data Analysis](#data-analysis)
 
 
-- [Data Visualization](#data-visualization)
+- [Data Visualizations](#data-visualizations)
 
 
-- [Visual Analysis](#visual-analysis)
+- [Visual Analysis and Overall Insights](#visual-analysis-and-overall-insights)
 
 
 - [Recommendations](#recommendations)
